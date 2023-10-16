@@ -1,27 +1,91 @@
-body {
-  font-family: "Arial" , "Meiryo" , sans-serif;
+h1 {
+  margin: 0;
+}
+p {
+  margin: 0;
+  font-size: 20px;
 }
 
-html {
+body {
+  margin: 0;
+}
+a {
   font-size: 20px;
+  color:rgb(255, 255, 255) ;
+}
+a:hover {
+  color: rgb(245, 178, 168);
+}
+a:valid {
+  color: rgb(193, 234, 251);
+}
+a:visited {
+  color: rgb(193, 234, 251);
+}
+header {
+  background-color: rgb(244,79,79);
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+
+#parent {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+.contents {
+  flex-basis: 25%;
+  padding: 10px 15px;
+  margin: 20px 0px;
   text-align: center;
 }
 
-h1 {
-  font-size: 2rem;
-  letter-spacing: 1.2em;
-  text-shadow: 3px 3px 3px DarkGray;
-  border-bottom: solid 3px rgb(115, 115, 114);
-}
-
-.text-pink {
-  color: rgb(255, 192, 203);
-}
-
-.text-skyblue {
-  color: skyblue;
-}
-
-#basic {
+p:nth-of-type(2)::first-letter {
   font-weight: bold;
+  color: rgb(97, 206, 249);
+  
+}
+
+
+#parent01 {
+  border: solid 3px rgb(238,204,204);
+}
+#parent02 {
+  border: solid 3px rgb(238,204,204);  
+}
+#parent03 {
+  border: solid 3px rgb(238,204,204);
+}
+
+
+h2 {
+  font-size: 25px;
+  border-bottom: dotted 3px rgb(236,122,122);
+}
+h2::before {
+  content: "●";
+  color: rgb(239,111,139);
+}
+
+img {
+  margin: 10px 0px;
+  width: 70%;
+}
+
+footer {
+  background-color:rgb(244, 79, 79) ;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 25px;
+  }
+  #parent  {
+    display: block;
+  }
 }
